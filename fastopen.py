@@ -77,7 +77,7 @@ def printHelp():
     print('使用 fop key value 形式为链接地址存储别名')
     print('使用 fop key形式快速打开链接')
     print('使用 fop k 即参数k来快速关闭浏览器')
-    print('使用 fop k key即参数k+key来快速关闭浏览器')
+    print('使用 fop k key即参数k+key来快速关闭浏览器,同时打开key对应的链接')
     print('使用 fop h 即参数h来查看本帮助')
     pass
 
@@ -105,9 +105,4 @@ elif opt == 'list':
 else:
     print("未知操作符")
     sys.exit()
-'''
-open -a "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" http://www.baidu.com
-os.system('cat /proc/cpuinfo')
-http://www.runoob.com/python3/python3-file-methods.html
-sys.argv[0]
-'''
+
